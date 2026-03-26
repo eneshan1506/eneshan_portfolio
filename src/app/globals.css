@@ -1,18 +1,72 @@
 @import "tailwindcss";
 
+:root {
+  --bg-color: #f9fafb;
+  --section-alt-bg: #f9fafb;
+  --surface-color: #ffffff;
+  --text-color: #111827;
+  --muted-text: #4b5563;
+  --border-color: #e5e7eb;
+  --header-bg: rgba(255, 255, 255, 0.95);
+  --footer-from: #111827;
+  --footer-to: #1f2937;
+  --footer-text: #d1d5db;
+  --icon-bg: #dbeafe;
+  --icon-text: #2563eb;
+  --tag-bg: #f3f4f6;
+  --tag-hover-bg: #dbeafe;
+  --tag-hover-text: #1d4ed8;
+  --button-border: #d1d5db;
+  --button-text: #111827;
+  --input-bg: #ffffff;
+  --input-border: #d1d5db;
+  --scroll-shadow: rgba(0, 0, 0, 0.15);
+}
+
+html[data-theme="dark"] {
+  --bg-color: #111827;
+  --section-alt-bg: #0f172a;
+  --surface-color: #1f2937;
+  --text-color: #f9fafb;
+  --muted-text: #d1d5db;
+  --border-color: #374151;
+  --header-bg: rgba(17, 24, 39, 0.95);
+  --footer-from: #030712;
+  --footer-to: #111827;
+  --footer-text: #d1d5db;
+  --icon-bg: rgba(37, 99, 235, 0.18);
+  --icon-text: #93c5fd;
+  --tag-bg: #374151;
+  --tag-hover-bg: rgba(37, 99, 235, 0.2);
+  --tag-hover-text: #bfdbfe;
+  --button-border: #4b5563;
+  --button-text: #f9fafb;
+  --input-bg: #111827;
+  --input-border: #4b5563;
+  --scroll-shadow: rgba(0, 0, 0, 0.35);
+}
+
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-gray-50 text-gray-900;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    transition: background-color 200ms ease, color 200ms ease;
   }
 
   button,
   a {
     @apply cursor-pointer;
   }
-}
 
-html {
-  scroll-behavior: smooth;
+  ::selection {
+    background: #2563eb;
+    color: white;
+  }
 }
 
 @keyframes progressAnimation {

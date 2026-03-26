@@ -2,8 +2,17 @@
 
 import { about, skills } from "@/data/portfolio";
 import { motion } from "framer-motion";
-import { FaFigma, FaGitAlt, FaNodeJs, FaReact } from "react-icons/fa";
 import {
+  FaCss3Alt,
+  FaFigma,
+  FaGitAlt,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+  FaShopify,
+} from "react-icons/fa";
+import {
+  SiCypress,
   SiMongodb,
   SiNextdotjs,
   SiTailwindcss,
@@ -12,6 +21,9 @@ import {
 
 const iconMap = {
   FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  SiCypress,
   SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
@@ -19,6 +31,7 @@ const iconMap = {
   SiMongodb,
   FaGitAlt,
   FaFigma,
+  FaShopify,
 };
 
 export default function AboutSection() {
@@ -41,11 +54,13 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
-          className="p-8 mb-12 bg-white border border-gray-200 shadow-lg rounded-2xl">
+          className="p-8 mb-12 border shadow-lg rounded-2xl"
+          style={{ backgroundColor: "var(--surface-color)", borderColor: "var(--border-color)" }}>
           {about.bio.map((paragraph, index) => (
             <p
               key={index}
-              className="mb-4 text-lg leading-relaxed text-gray-700 last:mb-0">
+              className="mb-4 text-lg leading-relaxed last:mb-0"
+              style={{ color: "var(--muted-text)" }}>
               {paragraph}
             </p>
           ))}
@@ -63,7 +78,8 @@ export default function AboutSection() {
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
           {skills.map((skill, index) => {
             const Icon = iconMap[skill.icon];
-            const percentage = parseInt(skill.level);
+            const percentage = Number.parseInt(skill.level, 10);
+            const progressWidth = Number.isNaN(percentage) ? 12 : percentage;
             return (
               <motion.div
                 key={skill.name}
@@ -71,9 +87,10 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="p-4 text-center transition-all bg-white border border-gray-200 rounded-lg hover:border-blue-400 hover:shadow-md group">
+                className="p-4 text-center transition-all border rounded-lg hover:border-blue-400 hover:shadow-md group"
+                style={{ backgroundColor: "var(--surface-color)", borderColor: "var(--border-color)" }}>
                 {Icon && (
-                  <Icon className="w-12 h-12 mx-auto mb-3 transition-transform text-blue-500 group-hover:scale-110" />
+                  <Icon className="w-12 h-12 mx-auto mb-3 text-blue-500 transition-transform group-hover:scale-110" />
                 )}
                 <div className="mb-3 font-semibold">{skill.name}</div>
 
@@ -82,12 +99,12 @@ export default function AboutSection() {
                   <div
                     className="h-full transition-all duration-1000 ease-out rounded-full bg-linear-to-r from-blue-400 to-blue-500 group-hover:from-blue-500 group-hover:to-blue-600"
                     style={{
-                      width: `${percentage}%`,
+                      width: `${progressWidth}%`,
                       animation: "progressAnimation 1.5s ease-out",
                     }}
                   />
                 </div>
-                <div className="text-xs text-gray-600">{skill.level}</div>
+                <div className="text-xs" style={{ color: "var(--muted-text)" }}>{skill.level}</div>
               </motion.div>
             );
           })}

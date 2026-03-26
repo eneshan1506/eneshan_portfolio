@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="px-4 py-20 bg-gray-50">
+    <section id="projects" className="px-4 py-20" style={{ backgroundColor: "var(--section-alt-bg)" }}>
       <div className="max-w-6xl mx-auto">
         {/* Section Title  */}
         <motion.h2
@@ -26,20 +26,22 @@ export default function ProjectsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="overflow-hidden transition-all bg-white border border-gray-200 shadow-lg rounded-xl hover:shadow-xl hover:border-blue-500 group">
+              className="overflow-hidden transition-all duration-300 border shadow-lg rounded-xl hover:-translate-y-1 hover:shadow-xl hover:border-blue-500 group"
+              style={{ backgroundColor: "var(--surface-color)", borderColor: "var(--border-color)" }}>
               {/* Content */}
               <div className="p-6">
                 <h3 className="mb-2 text-xl font-bold transition-colors group-hover:text-blue-600">
                   {project.title}
                 </h3>
-                <p className="mb-4 text-gray-600">{project.description}</p>
+                <p className="mb-4" style={{ color: "var(--muted-text)" }}>{project.description}</p>
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 text-sm text-gray-700 transition-colors bg-gray-100 rounded-full hover:bg-blue-100 hover:text-blue-700">
+                      className="px-3 py-1 text-sm transition-colors rounded-full"
+                      style={{ backgroundColor: "var(--tag-bg)", color: "var(--muted-text)" }}>
                       {tag}
                     </span>
                   ))}
@@ -54,7 +56,8 @@ export default function ProjectsSection() {
                   </a>
                   <a
                     href={project.codeUrl}
-                    className="flex-1 px-4 py-2 text-center transition-all border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:text-blue-600">
+                    className="flex-1 px-4 py-2 text-center transition-all border-2 rounded-lg hover:border-blue-500 hover:text-blue-600"
+                    style={{ borderColor: "var(--button-border)", color: "var(--button-text)" }}>
                     Code
                   </a>
                 </div>

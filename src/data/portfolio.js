@@ -5,61 +5,70 @@ export const personalInfo = {
     "Ich entwickle moderne und benutzerfreundliche Webanwendungen. Ich arbeite mit React, Next.js und TypeScript.",
   avatar: "👨‍💻",
   email: "eneshan0646@gmail.com",
-//   phone: "+90 555 123 4567",
+//   phone: "+49 555 123 4567",
   location: "Deutschland",
 };
 
 export const socialLinks = {
-  github: "https://github.com/eneshan0646",
+  github: "https://github.com/eneshan1506",
   linkedin: "https://linkedin.com",
   twitter: "https://twitter.com",
 };
 
 export const about = {
   bio: [
-    "Ich bin Enes HAN, ein leidenschaftlicher Full-Stack Entwickler mit Schwerpunkt auf modernen Webtechnologien. Mit umfangreicher Erfahrung in React, Next.js und TypeScript entwickle ich benutzerfreundliche und leistungsstarke Webanwendungen.",
+    "Ich bin Enes HAN, ein leidenschaftlicher Full-Stack Entwickler mit Schwerpunkt auf modernen Webtechnologien. Mit umfangreicher Erfahrung in React, Next.js und TypeScript entwickle ich benutzerfreundliche und leistungsstarke Webanwendungen. Darueber hinaus habe ich Apps fuer Shopify entwickelt und dabei an individuellen E-Commerce-Loesungen gearbeitet.",
   ],
 };
 
 export const skills = [
+  { name: "HTML", level: "100%", icon: "FaHtml5" },
+  { name: "CSS", level: "100%", icon: "FaCss3Alt" },
+  { name: "Cypress", level: "90%", icon: "SiCypress" },
+  { name: "GitHub", level: "92%", icon: "FaGitAlt" },
+  { name: "Shopify", level: "88%", icon: "FaShopify" },
   { name: "React", level: "95%", icon: "FaReact" },
-  { name: "Next.js", level: "90%", icon: "SiNextdotjs" },
-  { name: "TypeScript", level: "75%", icon: "SiTypescript" },
+  { name: "Next.js", level: "97%", icon: "SiNextdotjs" },
+  { name: "Node.js", level: "Loading...", icon: "FaNodeJs" },
+  { name: "TypeScript", level: "89%", icon: "SiTypescript" },
   { name: "Tailwind", level: "90%", icon: "SiTailwindcss" },
-//   { name: "Node.js", level: "80%", icon: "FaNodeJs" },
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-ticaret sitesi. Next.js, Stripe entegrasyonu.",
-    tags: ["Next.js", "TypeScript", "Stripe"],
-    demoUrl: "#",
-    codeUrl: "#",
+    title: "Todo-App With TS",
+    description:
+      "Eine moderne Aufgabenverwaltung mit TypeScript, klarer Benutzeroberflaeche und einer schnellen, reaktiven Nutzererfahrung.",
+    tags: ["React", "TypeScript", "Vercel"],
+    demoUrl: "https://todo-app-ts-inky.vercel.app/",
+    codeUrl: "https://github.com/eneshan1506/todo-app-ts",
   },
   {
     id: 2,
-    title: "Task Manager",
-    description: "Görev yönetim uygulaması. Drag & drop özellikli.",
-    tags: ["React", "Node.js", "MongoDB"],
-    demoUrl: "#",
-    codeUrl: "#",
+    title: "Calculator-App",
+    description:
+      "Eine kompakte Rechner-App fuer alltaegliche Berechnungen mit fokusierter Bedienung und sauberem Interface.",
+    tags: ["React", "JavaScript", "CSS"],
+    demoUrl: "https://calculator-app-topaz-pi-54.vercel.app/",
+    codeUrl: "https://github.com/eneshan1506/calculator-app",
   },
   {
     id: 3,
-    title: "Blog Platform",
-    description: "MDX tabanlı modern blog platformu. SEO optimizasyonlu.",
-    tags: ["Next.js", "MDX", "Tailwind"],
-    demoUrl: "#",
-    codeUrl: "#",
+    title: "Weather-App",
+    description:
+      "Eine Wetter-App, die aktuelle Wetterdaten uebersichtlich darstellt und wichtige Informationen schnell zugreifbar macht.",
+    tags: ["React", "API", "Tailwind CSS"],
+    demoUrl: "https://weather-app-topaz-ten-24.vercel.app/",
+    codeUrl: "https://github.com/eneshan1506/weather-app",
   },
-   {
+  {
     id: 4,
     title: "Guess App",
-    description: "Ziyaretci yorum uygulamasi. Nextjs,TS,Blob Storage kullanildi.",
-    tags: ["Next.js", "TS", "Tailwind"],
-    demoUrl: "https://guess-ave1bttmi-enes-hans-projects.vercel.app/",
+    description:
+      "Eine Besucherkommentar-App mit Next.js, TypeScript und Blob Storage zum Speichern und Verwalten von Nachrichten.",
+    tags: ["Next.js", "TypeScript", "Blob Storage"],
+    demoUrl: "https://guess-app-coral.vercel.app/",
     codeUrl: "https://github.com/eneshan1506/guess-app",
   },
 ];

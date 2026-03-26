@@ -2,7 +2,6 @@
 
 import { contactInfo, socialLinks } from "@/data/portfolio";
 import { motion } from "framer-motion";
-import { IconType } from "react-icons";
 import {
   IoCall,
   IoLocation,
@@ -12,10 +11,10 @@ import {
   IoMail,
 } from "react-icons/io5";
 
-const contactIcons= {
+const contactIcons = {
   IoMail,
-   IoCall,
- IoLocation,
+  IoCall,
+  IoLocation,
 };
 
 export default function ContactSection() {
@@ -40,7 +39,7 @@ export default function ContactSection() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}>
             <h3 className="mb-6 text-2xl font-bold">Kontaktinformationen</h3>
-            <p className="mb-8 text-gray-600">
+            <p className="mb-8" style={{ color: "var(--muted-text)" }}>
               Für Projektideen und Kooperationen können Sie mich gerne kontaktieren.
             </p>
 
@@ -49,12 +48,14 @@ export default function ContactSection() {
                 const Icon = contactIcons[info.icon] || IoMail;
                 return (
                   <div key={index} className="flex items-center gap-4">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-blue-100">
-                      <Icon className="w-6 h-6 text-blue-600" />
+                    <div
+                      className="flex items-center justify-center w-12 h-12 rounded-lg"
+                      style={{ backgroundColor: "var(--icon-bg)" }}>
+                      <Icon className="w-6 h-6" style={{ color: "var(--icon-text)" }} />
                     </div>
                     <div>
                       <div className="font-semibold">{info.label}</div>
-                      <div className="text-gray-600">{info.value}</div>
+                      <div style={{ color: "var(--muted-text)" }}>{info.value}</div>
                     </div>
                   </div>
                 );
@@ -67,21 +68,24 @@ export default function ContactSection() {
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-12 h-12 transition-all bg-gray-100 rounded-lg hover:bg-gray-900 hover:text-white">
+                className="flex items-center justify-center w-12 h-12 transition-all rounded-lg hover:text-white"
+                style={{ backgroundColor: "var(--tag-bg)" }}>
                 <IoLogoGithub className="w-6 h-6" />
               </a>
               <a
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-12 h-12 transition-all bg-gray-100 rounded-lg hover:bg-blue-500 hover:text-white">
+                className="flex items-center justify-center w-12 h-12 transition-all rounded-lg hover:bg-blue-500 hover:text-white"
+                style={{ backgroundColor: "var(--tag-bg)" }}>
                 <IoLogoLinkedin className="w-6 h-6" />
               </a>
               <a
                 href={socialLinks.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-12 h-12 transition-all bg-gray-100 rounded-lg hover:bg-gray-900 hover:text-white">
+                className="flex items-center justify-center w-12 h-12 transition-all rounded-lg hover:text-white"
+                style={{ backgroundColor: "var(--tag-bg)" }}>
                 <IoLogoTwitter className="w-6 h-6" />
               </a>
             </div>
@@ -98,7 +102,12 @@ export default function ContactSection() {
                 <label className="block mb-2 text-sm font-medium">Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 rounded-lg focus:border-blue-500 focus:outline-none"
+                  style={{
+                    backgroundColor: "var(--input-bg)",
+                    borderColor: "var(--input-border)",
+                    color: "var(--text-color)",
+                  }}
                   placeholder="Ihr Name"
                 />
               </div>
@@ -107,7 +116,12 @@ export default function ContactSection() {
                 <label className="block mb-2 text-sm font-medium">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 rounded-lg focus:border-blue-500 focus:outline-none"
+                  style={{
+                    backgroundColor: "var(--input-bg)",
+                    borderColor: "var(--input-border)",
+                    color: "var(--text-color)",
+                  }}
                   placeholder="email@example.com"
                 />
               </div>
@@ -116,7 +130,12 @@ export default function ContactSection() {
                 <label className="block mb-2 text-sm font-medium">Nachricht</label>
                 <textarea
                   rows={5}
-                  className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-lg resize-none focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 rounded-lg resize-none focus:border-blue-500 focus:outline-none"
+                  style={{
+                    backgroundColor: "var(--input-bg)",
+                    borderColor: "var(--input-border)",
+                    color: "var(--text-color)",
+                  }}
                   placeholder="Ihre Nachricht..."></textarea>
               </div>
 

@@ -8,7 +8,8 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="flex items-center justify-center min-h-screen bg-white">
+      className="flex items-center justify-center min-h-screen"
+      style={{ backgroundColor: "var(--surface-color)" }}>
       <div className="max-w-4xl px-4 mx-auto text-center">
         {/* Avatar  */}
         <motion.div
@@ -31,7 +32,8 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mb-8 text-2xl text-gray-600">
+          className="mb-8 text-2xl"
+          style={{ color: "var(--muted-text)" }}>
           {personalInfo.title}
         </motion.p>
 
@@ -40,7 +42,8 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="max-w-2xl mx-auto mb-10 text-lg text-gray-600">
+          className="max-w-2xl mx-auto mb-10 text-lg"
+          style={{ color: "var(--muted-text)" }}>
           {personalInfo.description}
         </motion.p>
 
@@ -57,7 +60,8 @@ export default function HeroSection() {
           </a>
           <a
             href="#contact"
-            className="px-8 py-3 transition border-2 border-gray-300 rounded-lg hover:border-blue-500">
+            className="px-8 py-3 transition border-2 rounded-lg hover:border-blue-500"
+            style={{ borderColor: "var(--button-border)", color: "var(--button-text)" }}>
             Kontactieren Sie Mich
           </a>
         </motion.div>
@@ -68,19 +72,22 @@ export default function HeroSection() {
             href={socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 transition-colors hover:text-black">
+            className="transition-colors hover:text-black"
+            style={{ color: "var(--muted-text)" }}>
             <IoLogoGithub className="w-8 h-8" />
           </a>
           <a
             href={socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 transition-colors hover:text-blue-600">
+            className="transition-colors hover:text-blue-600"
+            style={{ color: "var(--muted-text)" }}>
             <IoLogoLinkedin className="w-8 h-8" />
           </a>
           <a
             href={`mailto:${personalInfo.email}`}
-            className="text-gray-700 transition-colors hover:text-red-600">
+            className="transition-colors hover:text-red-600"
+            style={{ color: "var(--muted-text)" }}>
             <IoMail className="w-8 h-8" />
           </a>
         </div>
