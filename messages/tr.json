@@ -1,0 +1,70 @@
+{
+  "HomePage": {
+    "title": "Enes HAN Portfolyo",
+    "intro": "Modern web uygulamalarına odaklanan full-stack geliştirici."
+  },
+  "Metadata": {
+    "title": "Enes HAN | Portfolyo",
+    "description": "Portfolyoma hoş geldiniz. Ben Enes HAN, Almanya'da yaşayan bir full-stack geliştiriciyim."
+  },
+  "Hero": {
+    "badge": "Full-Stack Geliştirici Portfolyosu",
+    "headlineStart": "Modern",
+    "headlineHighlight": "web uygulamaları",
+    "headlineEnd": "tutkuyla geliştiriyorum.",
+    "description": "Ben Enes HAN, React, Next.js ve TypeScript deneyimine sahip bir full-stack geliştiriciyim. Kullanıcı dostu ve yüksek performanslı web uygulamaları geliştiriyorum.",
+    "cta": "Projeleri incele",
+    "imageAlt": "Çalışma ikonları"
+  },
+  "Navigation": {
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat"
+  },
+  "LanguageSwitcher": {
+    "label": "Dil değiştir"
+  },
+  "Skills": {
+    "badge": "Modern teknolojiler kullanıyorum",
+    "title": "Uygulamaları modern teknolojilerle geliştiriyorum.",
+    "subtitle": "Her zaman güncelin yakınında."
+  },
+  "Encryption": {
+    "titleStart": "Kalite",
+    "titleEnd": "Performans.",
+    "badge": "Güvenlik",
+    "description": "Güvenli ve yüksek performanslı web uygulamaları benim önceliğim.",
+    "lockTopAlt": "Kilidin üst parçası",
+    "lockMainAlt": "Kilit"
+  },
+  "Projects": {
+    "title": "Projelerim",
+    "liveDemo": "Canlı Demo",
+    "code": "Kod",
+    "items": {
+      "todoApp": {
+        "description": "TypeScript ile geliştirilmiş, sade arayüzlü ve hızlı kullanıcı deneyimi sunan modern bir görev yönetimi uygulaması."
+      },
+      "calculatorApp": {
+        "description": "Günlük hesaplamalar için odaklı kullanım ve temiz arayüz sunan kompakt bir hesap makinesi uygulaması."
+      },
+      "weatherApp": {
+        "description": "Güncel hava durumu verilerini anlaşılır biçimde gösteren ve önemli bilgilere hızlı erişim sağlayan bir hava durumu uygulaması."
+      },
+      "guessApp": {
+        "description": "Mesajları kaydetmek ve yönetmek için Next.js, TypeScript ve Blob Storage ile geliştirilmiş bir ziyaretçi yorum uygulaması."
+      },
+      "periodTrackerApp": {
+        "description": "Kadınların adet döngülerini takip etmelerine ve önemli bilgilere ulaşmalarına yardımcı olan bir dönem takip uygulaması."
+      }
+    }
+  },
+  "Footer": {
+    "community": "Topluluk",
+    "socialMedia": "Sosyal Medya",
+    "contact": "İletişim",
+    "rights": "Tüm hakları saklıdır."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "HomePage": {
+    "title": "Enes HAN Portfolio",
+    "intro": "Full-stack developer focused on modern web applications."
+  },
+  "Metadata": {
+    "title": "Enes HAN | Portfolio",
+    "description": "Welcome to my portfolio. I am Enes HAN, a full-stack developer based in Germany."
+  },
+  "Hero": {
+    "badge": "Full-Stack Developer Portfolio",
+    "headlineStart": "Modern",
+    "headlineHighlight": "web applications",
+    "headlineEnd": "built with passion.",
+    "description": "I am Enes HAN, a full-stack developer experienced with React, Next.js, and TypeScript. I build user-friendly, high-performance web applications.",
+    "cta": "View projects",
+    "imageAlt": "Work icons"
+  },
+  "Navigation": {
+    "about": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "LanguageSwitcher": {
+    "label": "Change language"
+  },
+  "Skills": {
+    "badge": "Modern technologies in use",
+    "title": "Building apps with modern technologies.",
+    "subtitle": "Always close to what is current."
+  },
+  "Encryption": {
+    "titleStart": "Quality",
+    "titleEnd": "Performance.",
+    "badge": "Security",
+    "description": "Secure, high-performance web applications are my priority.",
+    "lockTopAlt": "Top part of a lock",
+    "lockMainAlt": "Lock"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "liveDemo": "Live Demo",
+    "code": "Code",
+    "items": {
+      "todoApp": {
+        "description": "A modern task management app with TypeScript, a clear interface, and a fast, reactive user experience."
+      },
+      "calculatorApp": {
+        "description": "A compact calculator app for everyday calculations with focused controls and a clean interface."
+      },
+      "weatherApp": {
+        "description": "A weather app that presents current weather data clearly and keeps key information easy to access."
+      },
+      "guessApp": {
+        "description": "A visitor comment app built with Next.js, TypeScript, and Blob Storage for saving and managing messages."
+      },
+      "periodTrackerApp": {
+        "description": "A period tracker app that helps women follow their menstrual cycles and access important information."
+      }
+    }
+  },
+  "Footer": {
+    "community": "Community",
+    "socialMedia": "Social Media",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  }
+}

@@ -3,6 +3,7 @@
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import {
   slideInFromLeft,
@@ -11,6 +12,8 @@ import {
 } from "@/lib/motion";
 
 export function HeroContent() {
+  const t = useTranslations("Hero");
+
   return (
     <motion.div
       initial="hidden"
@@ -24,7 +27,7 @@ export function HeroContent() {
         >
           <SparklesIcon className="text-[#00D4FF] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Full-Stack Entwickler Portfolio
+            {t("badge")}
           </h1>
         </motion.div>
 
@@ -33,11 +36,11 @@ export function HeroContent() {
           className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Moderne{" "}
+            {t("headlineStart")}{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00D4FF] to-[#FFB800]">
-              Webanwendungen
+              {t("headlineHighlight")}
             </span>{" "}
-            mit Leidenschaft.
+            {t("headlineEnd")}
           </span>
         </motion.div>
 
@@ -45,9 +48,7 @@ export function HeroContent() {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          Ich bin Enes HAN, ein Full-Stack Entwickler mit Erfahrung in React,
-          Next.js und TypeScript. Ich entwickle benutzerfreundliche und
-          leistungsstarke Webanwendungen.
+          {t("description")}
         </motion.p>
 
         <motion.a
@@ -55,7 +56,7 @@ export function HeroContent() {
           href="#projects"
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
-          Projekte ansehen
+          {t("cta")}
         </motion.a>
       </div>
 
@@ -65,7 +66,7 @@ export function HeroContent() {
       >
         <Image
           src="/hero-bg.svg"
-          alt="work icons"
+          alt={t("imageAlt")}
           height={650}
           width={650}
           draggable={false}

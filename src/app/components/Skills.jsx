@@ -10,9 +10,22 @@ export function Skills() {
       style={{ transform: "scale(0.9)" }}
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
     >
-      <SkillText />
+      <div className="pointer-events-none absolute inset-0 -z-10 opacity-30">
+        <div
+          className="h-full w-full"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,212,255,0.4) 0%, rgba(255,184,0,0.2) 50%, transparent 75%)",
+            animation: "encGlowPulse 7s ease-in-out infinite alternate",
+          }}
+        />
+      </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="relative z-10">
+        <SkillText />
+      </div>
+
+      <div className="relative z-10 flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {SKILL_DATA.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
@@ -23,18 +36,6 @@ export function Skills() {
             index={i}
           />
         ))}
-      </div>
-
-      <div className="w-full h-full absolute">
-        <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center">
-          {/* Subtle cyan+gold ambient glow for skills section */}
-          <div style={{
-            width: '100%',
-            height: '100%',
-            background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,212,255,0.4) 0%, rgba(255,184,0,0.2) 50%, transparent 75%)',
-            animation: 'encGlowPulse 7s ease-in-out infinite alternate'
-          }} />
-        </div>
       </div>
     </section>
   );

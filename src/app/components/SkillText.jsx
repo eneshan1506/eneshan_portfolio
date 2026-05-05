@@ -2,6 +2,7 @@
 
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 import {
   slideInFromLeft,
@@ -10,6 +11,8 @@ import {
 } from "@/lib/motion";
 
 export function SkillText() {
+  const t = useTranslations("Skills");
+
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
       <motion.div
@@ -18,7 +21,7 @@ export function SkillText() {
       >
         <SparklesIcon className="text-[#00D4FF] mr-[10px] h-5 w-5" />
         <h1 className="Welcome-text text-[13px]">
-          Moderne Technologien im Einsatz
+          {t("badge")}
         </h1>
       </motion.div>
 
@@ -26,14 +29,14 @@ export function SkillText() {
         variants={slideInFromLeft(0.5)}
         className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
       >
-        Apps mit modernsten Technologien entwickeln.
+        {t("title")}
       </motion.div>
 
       <motion.div
         variants={slideInFromRight(0.5)}
         className="cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center"
       >
-        Immer am Puls der Zeit.
+        {t("subtitle")}
       </motion.div>
     </div>
   );

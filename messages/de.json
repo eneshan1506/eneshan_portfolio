@@ -1,0 +1,70 @@
+{
+  "HomePage": {
+    "title": "Enes HAN Portfolio",
+    "intro": "Full-Stack Entwickler mit Fokus auf moderne Webanwendungen."
+  },
+  "Metadata": {
+    "title": "Enes HAN | Portfolio",
+    "description": "Willkommen zu meinem Portfolio. Ich bin Enes HAN, ein Full-Stack Entwickler aus Deutschland."
+  },
+  "Hero": {
+    "badge": "Full-Stack Entwickler Portfolio",
+    "headlineStart": "Moderne",
+    "headlineHighlight": "Webanwendungen",
+    "headlineEnd": "mit Leidenschaft.",
+    "description": "Ich bin Enes HAN, ein Full-Stack Entwickler mit Erfahrung in React, Next.js und TypeScript. Ich entwickle benutzerfreundliche und leistungsstarke Webanwendungen.",
+    "cta": "Projekte ansehen",
+    "imageAlt": "Arbeits-Icons"
+  },
+  "Navigation": {
+    "about": "Über mich",
+    "skills": "Skills",
+    "projects": "Projekte",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "LanguageSwitcher": {
+    "label": "Sprache wechseln"
+  },
+  "Skills": {
+    "badge": "Moderne Technologien im Einsatz",
+    "title": "Apps mit modernsten Technologien entwickeln.",
+    "subtitle": "Immer am Puls der Zeit."
+  },
+  "Encryption": {
+    "titleStart": "Qualität",
+    "titleEnd": "Performance.",
+    "badge": "Sicherheit",
+    "description": "Sichere und performante Webanwendungen sind meine Priorität.",
+    "lockTopAlt": "Oberer Teil eines Schlosses",
+    "lockMainAlt": "Schloss"
+  },
+  "Projects": {
+    "title": "Meine Projekte",
+    "liveDemo": "Live Demo",
+    "code": "Code",
+    "items": {
+      "todoApp": {
+        "description": "Eine moderne Aufgabenverwaltung mit TypeScript, klarer Benutzeroberfläche und einer schnellen, reaktiven Nutzererfahrung."
+      },
+      "calculatorApp": {
+        "description": "Eine kompakte Rechner-App für alltägliche Berechnungen mit fokussierter Bedienung und sauberem Interface."
+      },
+      "weatherApp": {
+        "description": "Eine Wetter-App, die aktuelle Wetterdaten übersichtlich darstellt und wichtige Informationen schnell zugreifbar macht."
+      },
+      "guessApp": {
+        "description": "Eine Besucherkommentar-App mit Next.js, TypeScript und Blob Storage zum Speichern und Verwalten von Nachrichten."
+      },
+      "periodTrackerApp": {
+        "description": "Eine Perioden-Tracker-App, die Frauen dabei unterstützt, ihre Menstruationszyklen zu verfolgen und wichtige Informationen zu erhalten."
+      }
+    }
+  },
+  "Footer": {
+    "community": "Community",
+    "socialMedia": "Social Media",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
