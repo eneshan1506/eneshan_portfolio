@@ -163,7 +163,7 @@ export const FOOTER_DATA = [
       {
         name: "E-Mail",
         icon: IoMail,
-        link: "mailto:eneshan0646@gmail.com",
+        link: "mailto:contact@hanenes.com",
       },
     ],
   },
