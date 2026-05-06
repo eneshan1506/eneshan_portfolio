@@ -131,7 +131,7 @@ export const PROJECTS = [
     descriptionKey: "periodTrackerApp",
     title: "Period Tracker App",
     tags: ["Next.js", "TypeScript", "Blob Storage"],
-    demoUrl: "https://period-tracker-plum.vercel.app/",
+    demoUrl: "https://cycle.hanenes.com/",
     codeUrl: "https://github.com/eneshan1506/period_tracker.git",
   },
 ];
