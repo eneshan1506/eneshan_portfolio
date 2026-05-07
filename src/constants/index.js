@@ -99,6 +99,13 @@ export const SOCIALS = [
 ];
 
 export const PROJECTS = [
+   {
+    descriptionKey: "periodTrackerApp",
+    title: "Period Tracker App",
+    tags: ["Next.js", "TypeScript", "Blob Storage"],
+    demoUrl: "https://cycle.hanenes.com/",
+    codeUrl: "https://github.com/eneshan1506/period_tracker.git",
+  },
   {
     descriptionKey: "todoApp",
     title: "Todo-App With TS",
@@ -127,13 +134,7 @@ export const PROJECTS = [
     demoUrl: "https://guess-app-coral.vercel.app/",
     codeUrl: "https://github.com/eneshan1506/guess-app",
   },
-  {
-    descriptionKey: "periodTrackerApp",
-    title: "Period Tracker App",
-    tags: ["Next.js", "TypeScript", "Blob Storage"],
-    demoUrl: "https://cycle.hanenes.com/",
-    codeUrl: "https://github.com/eneshan1506/period_tracker.git",
-  },
+ 
 ];
 
 export const FOOTER_DATA = [

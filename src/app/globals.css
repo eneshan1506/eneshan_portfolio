@@ -7,6 +7,12 @@ body {
     "Segoe UI", sans-serif;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .cursive {
   font-family: "Brush Script MT", "Segoe Script", cursive;
 }

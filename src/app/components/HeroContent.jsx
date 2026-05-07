@@ -18,26 +18,26 @@ export function HeroContent() {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex w-full flex-col items-center justify-center overflow-hidden px-6 pt-32 sm:px-10 md:pt-40 lg:flex-row lg:px-20 z-[20]"
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      <div className="h-full w-full min-w-0 flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#00D4FF44] opacity-[0.9]"
+          className="Welcome-box max-w-full py-[8px] px-[7px] border border-[#00D4FF44] opacity-[0.9]"
         >
           <SparklesIcon className="text-[#00D4FF] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
+          <h1 className="Welcome-text min-w-0 text-[13px]">
             {t("badge")}
           </h1>
         </motion.div>
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex max-w-[600px] w-full min-w-0 flex-col gap-6 mt-6 text-5xl sm:text-6xl text-bold text-white h-auto [overflow-wrap:anywhere]"
         >
           <span>
             {t("headlineStart")}{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00D4FF] to-[#FFB800]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00D4FF] to-[#FFB800] [overflow-wrap:anywhere]">
               {t("headlineHighlight")}
             </span>{" "}
             {t("headlineEnd")}
@@ -46,7 +46,7 @@ export function HeroContent() {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-lg text-gray-400 my-5 max-w-[600px] w-full min-w-0"
         >
           {t("description")}
         </motion.p>
@@ -62,7 +62,7 @@ export function HeroContent() {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="hidden w-full min-w-0 h-full justify-center items-center lg:flex"
       >
         <Image
           src="/hero-bg.svg"
