@@ -1,30 +1,33 @@
 {
   "HomePage": {
     "title": "Enes HAN Portfolio",
-    "intro": "Full-Stack Entwickler mit Fokus auf moderne Webanwendungen."
+    "intro": "Full-Stack-Entwickler mit Fokus auf moderne Webanwendungen."
   },
   "Metadata": {
     "title": "Enes HAN | Portfolio",
-    "description": "Willkommen zu meinem Portfolio. Ich bin Enes HAN, ein Full-Stack Entwickler aus Deutschland."
+    "description": "Willkommen zu meinem Portfolio. Ich bin Enes HAN, ein Full-Stack-Entwickler aus Deutschland."
   },
   "Hero": {
-    "badge": "Full-Stack Entwickler Portfolio",
+    "badge": "Full-Stack-Entwickler-Portfolio",
     "headlineStart": "Moderne",
     "headlineHighlight": "Webanwendungen",
     "headlineEnd": "mit Leidenschaft.",
-    "description": "Ich bin Enes HAN, ein Full-Stack Entwickler mit Erfahrung in React, Next.js und TypeScript. Ich entwickle benutzerfreundliche und leistungsstarke Webanwendungen.",
+    "description": "Ich bin Enes HAN, ein Full-Stack-Entwickler mit Erfahrung in React, Next.js und TypeScript. Ich entwickle benutzerfreundliche und leistungsstarke Webanwendungen.",
     "cta": "Projekte ansehen",
     "imageAlt": "Arbeits-Icons"
   },
   "Navigation": {
     "about": "Über mich",
-    "skills": "Skills",
+    "skills": "Fähigkeiten",
     "projects": "Projekte",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schließen"
   },
   "LanguageSwitcher": {
     "label": "Sprache wechseln"
+  },
+  "ScrollTop": {
+    "label": "Nach oben"
   },
   "Skills": {
     "badge": "Moderne Technologien im Einsatz",
@@ -33,7 +36,7 @@
   },
   "Encryption": {
     "titleStart": "Qualität",
-    "titleEnd": "Performance.",
+    "titleEnd": "Performance",
     "badge": "Sicherheit",
     "description": "Sichere und performante Webanwendungen sind meine Priorität.",
     "lockTopAlt": "Oberer Teil eines Schlosses",
@@ -41,8 +44,7 @@
   },
   "Projects": {
     "title": "Meine Projekte",
-    "liveDemo": "Live Demo",
-    "code": "Code",
+    "liveDemo": "Demo ansehen",
     "items": {
       "todoApp": {
         "description": "Eine moderne Aufgabenverwaltung mit TypeScript, klarer Benutzeroberfläche und einer schnellen, reaktiven Nutzererfahrung."
@@ -63,7 +65,7 @@
   },
   "Footer": {
     "community": "Community",
-    "socialMedia": "Social Media",
+    "socialMedia": "Soziale Medien",
     "contact": "Kontakt",
     "rights": "Alle Rechte vorbehalten."
   }

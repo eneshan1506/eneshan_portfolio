@@ -18,7 +18,7 @@ export function HeroContent() {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex w-full flex-col items-center justify-center overflow-hidden px-6 pt-32 sm:px-10 md:pt-40 lg:flex-row lg:px-20 z-[20]"
+      className="flex w-full flex-col items-center justify-center overflow-x-hidden overflow-y-visible px-6 pt-32 sm:px-10 md:pt-40 lg:flex-row lg:px-20 z-[20]"
     >
       <div className="h-full w-full min-w-0 flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -33,11 +33,11 @@ export function HeroContent() {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex max-w-[600px] w-full min-w-0 flex-col gap-6 mt-6 text-5xl sm:text-6xl text-bold text-white h-auto [overflow-wrap:anywhere]"
+          className="flex max-w-[600px] w-full min-w-0 flex-col gap-6 mt-6 text-4xl sm:text-6xl font-bold text-white h-auto leading-[1.2] pb-1 [overflow-wrap:anywhere]"
         >
           <span>
             {t("headlineStart")}{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00D4FF] to-[#FFB800] [overflow-wrap:anywhere]">
+            <span className="inline-block align-baseline text-transparent bg-clip-text bg-gradient-to-r from-[#00D4FF] to-[#FFB800] leading-[1.2] pb-[0.08em] [overflow-wrap:anywhere]">
               {t("headlineHighlight")}
             </span>{" "}
             {t("headlineEnd")}
@@ -54,7 +54,7 @@ export function HeroContent() {
         <motion.a
           variants={slideInFromLeft(1)}
           href="#projects"
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[220px] w-full text-sm sm:text-base"
         >
           {t("cta")}
         </motion.a>

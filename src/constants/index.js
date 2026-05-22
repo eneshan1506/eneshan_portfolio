@@ -99,40 +99,35 @@ export const SOCIALS = [
 ];
 
 export const PROJECTS = [
-   {
+  {
     descriptionKey: "periodTrackerApp",
     title: "Period Tracker App",
     tags: ["Next.js", "TypeScript", "Blob Storage"],
     demoUrl: "https://cycle.hanenes.com/",
-    codeUrl: "https://github.com/eneshan1506/period_tracker.git",
   },
   {
     descriptionKey: "todoApp",
     title: "Todo-App With TS",
     tags: ["React", "TypeScript", "Vercel"],
     demoUrl: "https://todo-app-ts-inky.vercel.app/",
-    codeUrl: "https://github.com/eneshan1506/todo-app-ts",
   },
   {
     descriptionKey: "calculatorApp",
     title: "Calculator-App",
     tags: ["React", "JavaScript", "CSS"],
     demoUrl: "https://calculator-app-topaz-pi-54.vercel.app/",
-    codeUrl: "https://github.com/eneshan1506/calculator-app",
   },
   {
     descriptionKey: "weatherApp",
     title: "Weather-App",
     tags: ["React", "API", "Tailwind CSS"],
     demoUrl: "https://weather-app-topaz-ten-24.vercel.app/",
-    codeUrl: "https://github.com/eneshan1506/weather-app",
   },
   {
     descriptionKey: "guessApp",
     title: "Guess App",
     tags: ["Next.js", "TypeScript", "Blob Storage"],
     demoUrl: "https://guess-app-coral.vercel.app/",
-    codeUrl: "https://github.com/eneshan1506/guess-app",
   },
  
 ];

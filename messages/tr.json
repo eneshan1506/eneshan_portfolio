@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "Enes HAN Portfolyo",
-    "intro": "Modern web uygulamalarına odaklanan full-stack geliştirici."
+    "intro": "Modern web uygulamalarına odaklanan Full-Stack Geliştirici."
   },
   "Metadata": {
     "title": "Enes HAN | Portfolyo",
@@ -12,7 +12,7 @@
     "headlineStart": "Modern",
     "headlineHighlight": "web uygulamaları",
     "headlineEnd": "tutkuyla geliştiriyorum.",
-    "description": "Ben Enes HAN, React, Next.js ve TypeScript deneyimine sahip bir full-stack geliştiriciyim. Kullanıcı dostu ve yüksek performanslı web uygulamaları geliştiriyorum.",
+    "description": "Ben Enes HAN, React, Next.js ve TypeScript deneyimine sahip bir Full-Stack Geliştiriciyim. Kullanıcı dostu ve yüksek performanslı web uygulamaları geliştiriyorum.",
     "cta": "Projeleri incele",
     "imageAlt": "Çalışma ikonları"
   },
@@ -26,6 +26,9 @@
   "LanguageSwitcher": {
     "label": "Dil değiştir"
   },
+  "ScrollTop": {
+    "label": "Yukarı çık"
+  },
   "Skills": {
     "badge": "Modern teknolojiler kullanıyorum",
     "title": "Uygulamaları modern teknolojilerle geliştiriyorum.",
@@ -33,7 +36,7 @@
   },
   "Encryption": {
     "titleStart": "Kalite",
-    "titleEnd": "Performans.",
+    "titleEnd": "Performans",
     "badge": "Güvenlik",
     "description": "Güvenli ve yüksek performanslı web uygulamaları benim önceliğim.",
     "lockTopAlt": "Kilidin üst parçası",
@@ -42,7 +45,6 @@
   "Projects": {
     "title": "Projelerim",
     "liveDemo": "Canlı Demo",
-    "code": "Kod",
     "items": {
       "todoApp": {
         "description": "TypeScript ile geliştirilmiş, sade arayüzlü ve hızlı kullanıcı deneyimi sunan modern bir görev yönetimi uygulaması."

@@ -1,6 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
-import { Encryption } from "@/app/components/Encryption";
 import { Hero } from "@/app/components/Hero";
 import { Projects } from "@/app/components/Projects";
 import { Skills } from "@/app/components/Skills";
@@ -20,7 +19,6 @@ export default async function Home({ params }) {
       <div className="flex flex-col gap-20">
         <Hero />
         <Skills />
-        <Encryption />
         <Projects />
       </div>
     </main>

@@ -17,7 +17,7 @@ export function LanguageSwitcher() {
   const t = useTranslations("LanguageSwitcher");
 
   return (
-    <div
+    <nav
       className="flex items-center gap-1 rounded-full border border-[rgba(0,212,255,0.25)] bg-[rgba(3,0,20,0.37)] p-1 text-xs font-semibold text-gray-200"
       aria-label={t("label")}
     >
@@ -31,16 +31,16 @@ export function LanguageSwitcher() {
             locale={targetLocale}
             prefetch={false}
             aria-current={isActive ? "page" : undefined}
-            className={`rounded-full px-2 py-1 transition ${
+            className={`rounded-full px-3 py-2 transition ${
               isActive
                 ? "bg-[#00D4FF] text-[#030014]"
-                : "hover:text-[#00D4FF]"
+                : "hover:text-[#00D4FF] focus-visible:text-[#00D4FF]"
             }`}
           >
             {LOCALE_LABELS[targetLocale]}
           </Link>
         );
       })}
-    </div>
+    </nav>
   );
 }

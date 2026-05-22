@@ -26,6 +26,9 @@
   "LanguageSwitcher": {
     "label": "Change language"
   },
+  "ScrollTop": {
+    "label": "Scroll to top"
+  },
   "Skills": {
     "badge": "Modern technologies in use",
     "title": "Building apps with modern technologies.",
@@ -33,7 +36,7 @@
   },
   "Encryption": {
     "titleStart": "Quality",
-    "titleEnd": "Performance.",
+    "titleEnd": "Performance",
     "badge": "Security",
     "description": "Secure, high-performance web applications are my priority.",
     "lockTopAlt": "Top part of a lock",
@@ -42,7 +45,6 @@
   "Projects": {
     "title": "My Projects",
     "liveDemo": "Live Demo",
-    "code": "Code",
     "items": {
       "todoApp": {
         "description": "A modern task management app with TypeScript, a clear interface, and a fast, reactive user experience."

@@ -1,4 +1,5 @@
 import { SkillDataProvider } from "@/app/components/SkillDataProvider";
+import { QualityStrip } from "@/app/components/QualityStrip";
 import { SkillText } from "@/app/components/SkillText";
 
 import { SKILL_DATA } from "@/constants";
@@ -7,8 +8,7 @@ export function Skills() {
   return (
     <section
       id="skills"
-      style={{ transform: "scale(0.9)" }}
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
+      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20 scroll-mt-24"
     >
       <div className="pointer-events-none absolute inset-0 -z-10 opacity-30">
         <div
@@ -37,6 +37,8 @@ export function Skills() {
           />
         ))}
       </div>
+
+      <QualityStrip />
     </section>
   );
 }

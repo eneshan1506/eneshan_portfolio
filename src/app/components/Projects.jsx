@@ -11,12 +11,12 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center py-20"
+      className="flex flex-col items-center justify-center py-20 px-4 sm:px-8 scroll-mt-24"
     >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00D4FF] to-[#FFB800] py-20">
+      <h2 className="text-3xl sm:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00D4FF] to-[#FFB800] py-16 text-center">
         {t("title")}
-      </h1>
-      <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10">
+      </h2>
+      <div className="h-full w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
         {PROJECTS.map((project) => (
           <ProjectCard
             key={project.title}
@@ -24,9 +24,7 @@ export function Projects() {
             description={t(`items.${project.descriptionKey}.description`)}
             tags={project.tags}
             demoUrl={project.demoUrl}
-            codeUrl={project.codeUrl}
             liveDemoLabel={t("liveDemo")}
-            codeLabel={t("code")}
           />
         ))}
       </div>

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 
 import { Footer } from "@/app/components/Footer";
 import { Navbar } from "@/app/components/Navbar";
+import { ScrollToTopButton } from "@/app/components/ScrollToTopButton";
 import { StarsCanvas } from "@/app/components/StarBackground";
 import { routing } from "@/i18n/routing";
 
@@ -44,6 +45,7 @@ export default async function LocaleLayout({ children, params }) {
           <StarsCanvas />
           <Navbar />
           {children}
+          <ScrollToTopButton />
           <Footer />
         </NextIntlClientProvider>
       </body>

@@ -24,9 +24,10 @@ export function Footer() {
                   href={link}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="flex flex-row items-center my-[15px]"
+                  aria-label={name}
+                  className="flex flex-row items-center my-[15px] rounded-md"
                 >
-                  {Icon && <Icon />}
+                  {Icon && <Icon aria-hidden="true" />}
                   <span className="text-[15px] ml-[6px]">{name}</span>
                 </Link>
               ))}

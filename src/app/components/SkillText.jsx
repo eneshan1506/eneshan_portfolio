@@ -34,7 +34,7 @@ export function SkillText() {
 
       <motion.div
         variants={slideInFromRight(0.5)}
-        className="cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center"
+        className="cursive text-[22px] sm:text-[24px] text-gray-100 mb-10 mt-[10px] text-center leading-8"
       >
         {t("subtitle")}
       </motion.div>
