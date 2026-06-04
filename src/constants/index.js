@@ -105,10 +105,10 @@ export const PROJECTS = [
     tags: ["Next.js", "TypeScript", "Blob Storage"],
     demoUrl: "https://cycle.hanenes.com/",
   },
-    {
-    descriptionKey: "MedikamenteApp",
+  {
+    descriptionKey: "medikamenteApp",
     title: "Medikamenten-Tracker App",
-    tags: ["Next.js", "TypeScript", "NeonDB", "Vercel","Cron Jobs"],
+    tags: ["Next.js", "TypeScript", "NeonDB", "Vercel", "Cron Jobs"],
     demoUrl: "https://medikamente.hanenes.com/",
   },
   {

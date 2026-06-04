@@ -49,6 +49,9 @@
       "todoApp": {
         "description": "TypeScript ile geliştirilmiş, sade arayüzlü ve hızlı kullanıcı deneyimi sunan modern bir görev yönetimi uygulaması."
       },
+      "medikamenteApp": {
+        "description": "TypeScript ile geliştirilmiş, günlük ilaç takibi için tasarlanmış pratik bir uygulama."
+      },
       "calculatorApp": {
         "description": "Günlük hesaplamalar için odaklı kullanım ve temiz arayüz sunan kompakt bir hesap makinesi uygulaması."
       },

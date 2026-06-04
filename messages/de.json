@@ -49,6 +49,9 @@
       "todoApp": {
         "description": "Eine moderne Aufgabenverwaltung mit TypeScript, klarer Benutzeroberfläche und einer schnellen, reaktiven Nutzererfahrung."
       },
+      "medikamenteApp": {
+        "description": "Eine praktische App zur taeglichen Medikamentenverfolgung, entwickelt mit TypeScript."
+      },
       "calculatorApp": {
         "description": "Eine kompakte Rechner-App für alltägliche Berechnungen mit fokussierter Bedienung und sauberem Interface."
       },

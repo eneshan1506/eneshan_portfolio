@@ -49,6 +49,9 @@
       "todoApp": {
         "description": "A modern task management app with TypeScript, a clear interface, and a fast, reactive user experience."
       },
+      "medikamenteApp": {
+        "description": "A practical medication tracking app for daily use, built with TypeScript."
+      },
       "calculatorApp": {
         "description": "A compact calculator app for everyday calculations with focused controls and a clean interface."
       },
