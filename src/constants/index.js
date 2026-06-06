@@ -118,6 +118,12 @@ export const PROJECTS = [
     demoUrl: "https://medikamente.hanenes.com/",
   },
   {
+    descriptionKey: "handonerApp",
+    title: "HanDoner",
+    tags: ["Next.js", "Tailwind CSS", "Restaurant Website"],
+    demoUrl: "https://handoner.hanenes.com/",
+  },
+  {
     descriptionKey: "todoApp",
     title: "Todo-App With TS",
     tags: ["React", "TypeScript", "Vercel"],

@@ -46,6 +46,9 @@
     "title": "Meine Projekte",
     "liveDemo": "Demo ansehen",
     "items": {
+      "handonerApp": {
+        "description": "Eine moderne Doener-Restaurant-Website mit Next.js und Tailwind CSS, die Menues und Produkte in einer klaren und schnellen Oberflaeche praesentiert."
+      },
       "hanmarktApp": {
         "description": "Eine moderne Markt-App mit Next.js und Tailwind CSS, die Produkte in einer klaren und schnellen Einkaufserfahrung praesentiert."
       },

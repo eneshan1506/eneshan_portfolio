@@ -46,6 +46,9 @@
     "title": "Projelerim",
     "liveDemo": "Canlı Demo",
     "items": {
+      "handonerApp": {
+        "description": "Next.js ve Tailwind CSS ile gelistirilmis, menu ve urun sunumunu hizli ve temiz bir arayuzle veren modern bir donerci web sitesi."
+      },
       "hanmarktApp": {
         "description": "Next.js ve Tailwind CSS ile gelistirilmis, urunleri sade ve hizli bir deneyimle sunan modern bir market uygulamasi."
       },
