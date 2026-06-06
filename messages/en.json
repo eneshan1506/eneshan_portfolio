@@ -46,6 +46,9 @@
     "title": "My Projects",
     "liveDemo": "Live Demo",
     "items": {
+      "hanmarktApp": {
+        "description": "A modern market app built with Next.js and Tailwind CSS, designed to present products with a clean and fast shopping experience."
+      },
       "todoApp": {
         "description": "A modern task management app with TypeScript, a clear interface, and a fast, reactive user experience."
       },

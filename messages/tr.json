@@ -46,6 +46,9 @@
     "title": "Projelerim",
     "liveDemo": "Canlı Demo",
     "items": {
+      "hanmarktApp": {
+        "description": "Next.js ve Tailwind CSS ile gelistirilmis, urunleri sade ve hizli bir deneyimle sunan modern bir market uygulamasi."
+      },
       "todoApp": {
         "description": "TypeScript ile geliştirilmiş, sade arayüzlü ve hızlı kullanıcı deneyimi sunan modern bir görev yönetimi uygulaması."
       },

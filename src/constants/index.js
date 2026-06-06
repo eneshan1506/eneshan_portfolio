@@ -100,6 +100,12 @@ export const SOCIALS = [
 
 export const PROJECTS = [
   {
+    descriptionKey: "hanmarktApp",
+    title: "HanMarkt",
+    tags: ["Next.js", "Tailwind CSS", "Market App"],
+    demoUrl: "https://hanmarkt.hanenes.com/",
+  },
+  {
     descriptionKey: "periodTrackerApp",
     title: "Period Tracker App",
     tags: ["Next.js", "TypeScript", "Blob Storage"],
@@ -135,7 +141,6 @@ export const PROJECTS = [
     tags: ["Next.js", "TypeScript", "Blob Storage"],
     demoUrl: "https://guess-app-coral.vercel.app/",
   },
- 
 ];
 
 export const FOOTER_DATA = [
