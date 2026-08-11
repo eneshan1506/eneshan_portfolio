@@ -15,7 +15,7 @@ export function Projects() {
       className="flex flex-col items-center justify-center py-20 scroll-mt-24"
     >
       <Container>
-        <h2 className="py-16 text-center text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00D4FF] to-[#FFB800] sm:text-4xl">
+        <h2 className="bg-gradient-to-r from-[#00D4FF] to-[#FFB800] bg-clip-text py-16 text-center font-display text-3xl font-semibold text-transparent sm:text-4xl">
           {t("title")}
         </h2>
         <div className="grid h-full w-full grid-cols-1 gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3">

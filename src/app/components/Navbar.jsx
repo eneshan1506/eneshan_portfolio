@@ -14,15 +14,15 @@ import { Link } from "@/i18n/navigation";
 const NAV_LINKS = [
   {
     titleKey: "about",
-    link: "#about-me",
+    href: "/#about-me",
   },
   {
     titleKey: "skills",
-    link: "#skills",
+    href: "/#skills",
   },
   {
     titleKey: "projects",
-    link: "#projects",
+    href: "/#projects",
   },
 ];
 
@@ -33,7 +33,7 @@ export function Navbar() {
   return (
     <header className="fixed top-0 z-50 h-[65px] w-full bg-[#03001427] shadow-lg shadow-[#00D4FF]/20 backdrop-blur-md">
       <Container className="flex h-full items-center justify-between">
-        <Link href="#about-me" className="flex items-center rounded-md">
+        <Link href="/" className="flex items-center rounded-md">
           <Image
             src="/logo-transparent.png"
             alt="Logo"
@@ -42,7 +42,7 @@ export function Navbar() {
             draggable={false}
             className="cursor-pointer mix-blend-lighten"
           />
-          <div className="ml-[10px] hidden whitespace-nowrap font-bold text-gray-300 sm:flex">
+          <div className="ml-[10px] hidden whitespace-nowrap font-display font-bold text-gray-300 sm:flex">
             Enes HAN
           </div>
         </Link>
@@ -55,8 +55,8 @@ export function Navbar() {
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.titleKey}
-                href={link.link}
-                className="cursor-pointer whitespace-nowrap text-sm transition hover:text-[#00D4FF] focus-visible:text-[#00D4FF] lg:text-base"
+                href={link.href}
+                className="cursor-pointer whitespace-nowrap px-2 py-2 text-sm transition hover:text-[#00D4FF] focus-visible:text-[#00D4FF] lg:text-base"
               >
                 {t(link.titleKey)}
               </Link>
@@ -64,7 +64,7 @@ export function Navbar() {
           </nav>
         </div>
 
-        <div className="hidden shrink-0 flex-row items-center gap-3 md:flex lg:gap-5">
+        <div className="hidden shrink-0 flex-row items-center gap-2 md:flex lg:gap-3">
           <LanguageSwitcher />
           {SOCIALS.map(({ link, name, icon: Icon }) => (
             <NextLink
@@ -73,7 +73,7 @@ export function Navbar() {
               rel="noreferrer noopener"
               key={name}
               aria-label={name}
-              className="cursor-pointer rounded-md"
+              className="inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-md transition hover:text-[#00D4FF]"
             >
               <Icon aria-hidden="true" className="h-6 w-6 text-white" />
             </NextLink>
@@ -82,7 +82,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="cursor-pointer rounded-md p-2 text-white md:hidden"
+          className="inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-md text-white md:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label={t(isMobileMenuOpen ? "closeMenu" : "openMenu")}
           aria-expanded={isMobileMenuOpen}
@@ -101,12 +101,12 @@ export function Navbar() {
           id="mobile-nav"
           className="absolute left-0 top-[65px] flex w-full flex-col items-center bg-[#030014] p-5 text-gray-300 md:hidden"
         >
-          <nav aria-label="Mobile Primary" className="flex flex-col items-center gap-4">
+          <nav aria-label="Mobile Primary" className="flex flex-col items-center gap-2">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.titleKey}
-                href={link.link}
-                className="cursor-pointer text-center transition hover:text-[#00D4FF] focus-visible:text-[#00D4FF]"
+                href={link.href}
+                className="inline-flex min-h-11 cursor-pointer items-center justify-center px-4 text-center transition hover:text-[#00D4FF] focus-visible:text-[#00D4FF]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t(link.titleKey)}
@@ -114,7 +114,7 @@ export function Navbar() {
             ))}
           </nav>
 
-          <div className="mt-6 flex justify-center gap-6">
+          <div className="mt-6 flex items-center justify-center gap-3">
             <LanguageSwitcher />
             {SOCIALS.map(({ link, name, icon: Icon }) => (
               <NextLink
@@ -123,9 +123,9 @@ export function Navbar() {
                 rel="noreferrer noopener"
                 key={name}
                 aria-label={name}
-                className="cursor-pointer rounded-md"
+                className="inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-md"
               >
-                <Icon aria-hidden="true" className="h-8 w-8 text-white" />
+                <Icon aria-hidden="true" className="h-7 w-7 text-white" />
               </NextLink>
             ))}
           </div>

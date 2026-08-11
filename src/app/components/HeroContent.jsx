@@ -11,6 +11,7 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/lib/motion";
+import { Link } from "@/i18n/navigation";
 
 export function HeroContent() {
   const t = useTranslations("Hero");
@@ -25,7 +26,7 @@ export function HeroContent() {
         <div className="m-auto flex h-full w-full min-w-0 flex-col justify-center gap-5 text-start">
           <motion.h1
             variants={slideInFromTop}
-            className="text-2xl font-bold tracking-tight text-[#00D4FF] sm:text-3xl"
+            className="font-display text-2xl font-bold tracking-tight text-[#00D4FF] sm:text-3xl"
           >
             {t("name")}
           </motion.h1>
@@ -40,7 +41,7 @@ export function HeroContent() {
 
           <motion.div
             variants={slideInFromLeft(0.5)}
-            className="mt-2 flex h-auto w-full min-w-0 max-w-[600px] flex-col gap-6 pb-1 text-4xl font-bold leading-[1.2] text-white [overflow-wrap:anywhere] sm:mt-4 sm:text-6xl"
+            className="mt-2 flex h-auto w-full min-w-0 max-w-[600px] flex-col gap-6 pb-1 font-display text-4xl font-bold leading-[1.2] text-white [overflow-wrap:anywhere] sm:mt-4 sm:text-6xl"
           >
             <span>
               {t("headlineStart")}{" "}
@@ -58,13 +59,14 @@ export function HeroContent() {
             {t("description")}
           </motion.p>
 
-          <motion.a
-            variants={slideInFromLeft(1)}
-            href="#projects"
-            className="button-primary w-full max-w-[220px] cursor-pointer rounded-lg py-2 text-center text-sm text-white sm:text-base"
-          >
-            {t("cta")}
-          </motion.a>
+          <motion.div variants={slideInFromLeft(1)}>
+            <Link
+              href="/#projects"
+              className="button-primary inline-block w-full max-w-[220px] cursor-pointer rounded-lg py-2 text-center text-sm text-white sm:text-base"
+            >
+              {t("cta")}
+            </Link>
+          </motion.div>
         </div>
 
         <motion.div

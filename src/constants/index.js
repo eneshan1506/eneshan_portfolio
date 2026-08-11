@@ -164,6 +164,13 @@ export const PROJECTS = [
   },
 ];
 
+export const SITE_LEGAL = {
+  name: "Enes HAN",
+  city: "Deutschland",
+  email: "contact@hanenes.com",
+  website: "https://hanenes.com",
+};
+
 export const FOOTER_DATA = [
   {
     titleKey: "community",

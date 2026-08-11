@@ -43,7 +43,7 @@ export function ProjectCard({
       <ProjectCover image={image} title={title} imageAlt={imageAlt} />
 
       <div className="relative flex flex-1 flex-col p-6">
-        <h3 className="mb-3 text-2xl font-semibold text-white">{title}</h3>
+        <h3 className="mb-3 font-display text-2xl font-semibold text-white">{title}</h3>
         <p className="mb-4 text-sm leading-relaxed text-gray-300">{description}</p>
 
         <div className="mb-5 flex flex-wrap gap-2">

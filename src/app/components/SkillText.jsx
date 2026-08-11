@@ -20,14 +20,14 @@ export function SkillText() {
         className="Welcome-box py-[8px] px-[7px] border border-[#00D4FF44] opacity-[0.9]"
       >
         <SparklesIcon className="text-[#00D4FF] mr-[10px] h-5 w-5" />
-        <h1 className="Welcome-text text-[13px]">
+        <p className="Welcome-text text-[13px]">
           {t("badge")}
-        </h1>
+        </p>
       </motion.div>
 
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
+        className="mt-[10px] mb-[15px] text-center font-display text-[30px] font-medium text-white"
       >
         {t("title")}
       </motion.div>

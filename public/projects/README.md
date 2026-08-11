@@ -1,6 +1,6 @@
 # Project preview images
 
-Drop one screenshot per project here. Expected filenames:
+Live screenshots captured from each demo (1200×750 WebP).
 
 | File | Project |
 |------|---------|
@@ -13,6 +13,3 @@ Drop one screenshot per project here. Expected filenames:
 | `calculator-app.webp` | Calculator-App |
 | `weather-app.webp` | Weather-App |
 | `guess-app.webp` | Guess App |
-
-Recommended: 1200×750 (16:10), WebP, under ~200 KB.
-Cards keep a fixed image height; missing files show a gradient placeholder.

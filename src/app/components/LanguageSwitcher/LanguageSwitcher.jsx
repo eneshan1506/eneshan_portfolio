@@ -31,7 +31,7 @@ export function LanguageSwitcher() {
             locale={targetLocale}
             prefetch={false}
             aria-current={isActive ? "page" : undefined}
-            className={`rounded-full px-3 py-2 transition ${
+            className={`inline-flex min-h-11 min-w-11 items-center justify-center rounded-full px-3 py-2 transition ${
               isActive
                 ? "bg-[#00D4FF] text-[#030014]"
                 : "hover:text-[#00D4FF] focus-visible:text-[#00D4FF]"
