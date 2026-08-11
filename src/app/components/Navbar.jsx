@@ -6,6 +6,7 @@ import Image from "next/image";
 import NextLink from "next/link";
 import { useTranslations } from "next-intl";
 
+import { Container } from "@/app/components/Container";
 import { LanguageSwitcher } from "@/app/components/LanguageSwitcher/LanguageSwitcher";
 import { SOCIALS } from "@/constants";
 import { Link } from "@/i18n/navigation";
@@ -30,8 +31,8 @@ export function Navbar() {
   const t = useTranslations("Navigation");
 
   return (
-    <header className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#00D4FF]/20 bg-[#03001427] backdrop-blur-md z-50 px-4 sm:px-8 lg:px-10">
-      <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
+    <header className="fixed top-0 z-50 h-[65px] w-full bg-[#03001427] shadow-lg shadow-[#00D4FF]/20 backdrop-blur-md">
+      <Container className="flex h-full items-center justify-between">
         <Link href="#about-me" className="flex items-center rounded-md">
           <Image
             src="/logo-transparent.png"
@@ -41,21 +42,21 @@ export function Navbar() {
             draggable={false}
             className="cursor-pointer mix-blend-lighten"
           />
-          <div className="hidden lg:flex font-bold ml-[10px] text-gray-300 whitespace-nowrap">
+          <div className="ml-[10px] hidden whitespace-nowrap font-bold text-gray-300 sm:flex">
             Enes HAN
           </div>
         </Link>
 
-        <div className="hidden md:flex flex-1 min-w-0 h-full flex-row items-center justify-center px-4 lg:px-8">
+        <div className="hidden h-full min-w-0 flex-1 flex-row items-center justify-center px-4 md:flex lg:px-8">
           <nav
             aria-label="Primary"
-            className="flex items-center justify-between w-full max-w-[560px] h-auto border border-[rgba(0,212,255,0.25)] bg-[rgba(3,0,20,0.37)] px-4 lg:px-5 py-[10px] rounded-full text-gray-200"
+            className="flex h-auto w-full max-w-[560px] flex-row items-center justify-between rounded-full border border-[rgba(0,212,255,0.25)] bg-[rgba(3,0,20,0.37)] px-4 py-[10px] text-gray-200 lg:px-5"
           >
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.titleKey}
                 href={link.link}
-                className="cursor-pointer hover:text-[#00D4FF] transition focus-visible:text-[#00D4FF] text-sm lg:text-base whitespace-nowrap"
+                className="cursor-pointer whitespace-nowrap text-sm transition hover:text-[#00D4FF] focus-visible:text-[#00D4FF] lg:text-base"
               >
                 {t(link.titleKey)}
               </Link>
@@ -63,7 +64,7 @@ export function Navbar() {
           </nav>
         </div>
 
-        <div className="hidden md:flex flex-row items-center gap-3 lg:gap-5 shrink-0">
+        <div className="hidden shrink-0 flex-row items-center gap-3 md:flex lg:gap-5">
           <LanguageSwitcher />
           {SOCIALS.map(({ link, name, icon: Icon }) => (
             <NextLink
@@ -72,7 +73,7 @@ export function Navbar() {
               rel="noreferrer noopener"
               key={name}
               aria-label={name}
-              className="rounded-md"
+              className="cursor-pointer rounded-md"
             >
               <Icon aria-hidden="true" className="h-6 w-6 text-white" />
             </NextLink>
@@ -80,7 +81,8 @@ export function Navbar() {
         </div>
 
         <button
-          className="md:hidden text-white p-2 rounded-md"
+          type="button"
+          className="cursor-pointer rounded-md p-2 text-white md:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label={t(isMobileMenuOpen ? "closeMenu" : "openMenu")}
           aria-expanded={isMobileMenuOpen}
@@ -92,19 +94,19 @@ export function Navbar() {
             <Bars3Icon aria-hidden="true" className="h-8 w-8" />
           )}
         </button>
-      </div>
+      </Container>
 
       {isMobileMenuOpen && (
         <div
           id="mobile-nav"
-          className="absolute top-[65px] left-0 w-full bg-[#030014] p-5 flex flex-col items-center text-gray-300 md:hidden"
+          className="absolute left-0 top-[65px] flex w-full flex-col items-center bg-[#030014] p-5 text-gray-300 md:hidden"
         >
           <nav aria-label="Mobile Primary" className="flex flex-col items-center gap-4">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.titleKey}
                 href={link.link}
-                className="cursor-pointer hover:text-[#00D4FF] transition text-center focus-visible:text-[#00D4FF]"
+                className="cursor-pointer text-center transition hover:text-[#00D4FF] focus-visible:text-[#00D4FF]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t(link.titleKey)}
@@ -112,7 +114,7 @@ export function Navbar() {
             ))}
           </nav>
 
-          <div className="flex justify-center gap-6 mt-6">
+          <div className="mt-6 flex justify-center gap-6">
             <LanguageSwitcher />
             {SOCIALS.map(({ link, name, icon: Icon }) => (
               <NextLink
@@ -121,7 +123,7 @@ export function Navbar() {
                 rel="noreferrer noopener"
                 key={name}
                 aria-label={name}
-                className="rounded-md"
+                className="cursor-pointer rounded-md"
               >
                 <Icon aria-hidden="true" className="h-8 w-8 text-white" />
               </NextLink>

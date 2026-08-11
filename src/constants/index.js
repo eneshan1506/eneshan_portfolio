@@ -94,7 +94,7 @@ export const SOCIALS = [
   {
     name: "LinkedIn",
     icon: RxLinkedinLogo,
-    link: "https://www.linkedin.com/in/enes-han-a955373bb/",
+    link: "https://www.linkedin.com/in/eneshan/",
   },
 ];
 
@@ -104,54 +104,63 @@ export const PROJECTS = [
     title: "HAN Handy Service",
     tags: ["React", "TypeScript", "Express", "Prisma", "Neon"],
     demoUrl: "https://handyreparatur.hanenes.com/",
+    image: "/projects/han-handy-service.webp",
   },
   {
     descriptionKey: "hanmarktApp",
     title: "HanMarkt",
     tags: ["Next.js", "Tailwind CSS", "Market App"],
     demoUrl: "https://hanmarkt.hanenes.com/",
+    image: "/projects/hanmarkt.webp",
   },
   {
     descriptionKey: "periodTrackerApp",
     title: "Period Tracker App",
     tags: ["Next.js", "TypeScript", "Blob Storage"],
     demoUrl: "https://cycle.hanenes.com/",
+    image: "/projects/period-tracker.webp",
   },
   {
     descriptionKey: "medikamenteApp",
     title: "Medikamenten-Tracker App",
     tags: ["Next.js", "TypeScript", "NeonDB", "Vercel", "Cron Jobs"],
     demoUrl: "https://medikamente.hanenes.com/",
+    image: "/projects/medikamente.webp",
   },
   {
     descriptionKey: "handonerApp",
     title: "HanDoner",
     tags: ["Next.js", "Tailwind CSS", "Restaurant Website"],
     demoUrl: "https://handoner.hanenes.com/",
+    image: "/projects/handoner.webp",
   },
   {
     descriptionKey: "todoApp",
     title: "Todo-App With TS",
     tags: ["React", "TypeScript", "Vercel"],
     demoUrl: "https://todo-app-ts-inky.vercel.app/",
+    image: "/projects/todo-app.webp",
   },
   {
     descriptionKey: "calculatorApp",
     title: "Calculator-App",
     tags: ["React", "JavaScript", "CSS"],
     demoUrl: "https://calculator-app-topaz-pi-54.vercel.app/",
+    image: "/projects/calculator-app.webp",
   },
   {
     descriptionKey: "weatherApp",
     title: "Weather-App",
     tags: ["React", "API", "Tailwind CSS"],
     demoUrl: "https://weather-app-topaz-ten-24.vercel.app/",
+    image: "/projects/weather-app.webp",
   },
   {
     descriptionKey: "guessApp",
     title: "Guess App",
     tags: ["Next.js", "TypeScript", "Blob Storage"],
     demoUrl: "https://guess-app-coral.vercel.app/",
+    image: "/projects/guess-app.webp",
   },
 ];
 
@@ -172,7 +181,7 @@ export const FOOTER_DATA = [
       {
         name: "LinkedIn",
         icon: RxLinkedinLogo,
-        link: "https://www.linkedin.com/in/enes-han-a955373bb/",
+        link: "https://www.linkedin.com/in/eneshan/",
       },
     ],
   },

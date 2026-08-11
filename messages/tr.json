@@ -8,6 +8,7 @@
     "description": "Portfolyoma hoş geldiniz. Ben Enes HAN, Almanya'da yaşayan bir full-stack geliştiriciyim."
   },
   "Hero": {
+    "name": "Enes HAN",
     "badge": "Full-Stack Geliştirici Portfolyosu",
     "headlineStart": "Modern",
     "headlineHighlight": "web uygulamaları",

@@ -8,6 +8,7 @@
     "description": "Welcome to my portfolio. I am Enes HAN, a full-stack developer based in Germany."
   },
   "Hero": {
+    "name": "Enes HAN",
     "badge": "Full-Stack Developer Portfolio",
     "headlineStart": "Modern",
     "headlineHighlight": "web applications",

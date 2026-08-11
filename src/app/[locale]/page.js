@@ -12,10 +12,7 @@ export default async function Home({ params }) {
 
   return (
     <main className="h-full w-full">
-      <div className="sr-only">
-        <h1>{t("title")}</h1>
-        <p>{t("intro")}</p>
-      </div>
+      <p className="sr-only">{t("intro")}</p>
       <div className="flex flex-col gap-20">
         <Hero />
         <Skills />

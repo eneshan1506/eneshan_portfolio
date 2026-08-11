@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import { Container } from "@/app/components/Container";
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -15,64 +16,72 @@ export function HeroContent() {
   const t = useTranslations("Hero");
 
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      className="flex w-full flex-col items-center justify-center overflow-x-hidden overflow-y-visible px-6 pt-32 sm:px-10 md:pt-40 lg:flex-row lg:px-20 z-[20]"
-    >
-      <div className="h-full w-full min-w-0 flex flex-col gap-5 justify-center m-auto text-start">
-        <motion.div
-          variants={slideInFromTop}
-          className="Welcome-box max-w-full py-[8px] px-[7px] border border-[#00D4FF44] opacity-[0.9]"
-        >
-          <SparklesIcon className="text-[#00D4FF] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text min-w-0 text-[13px]">
-            {t("badge")}
-          </h1>
-        </motion.div>
-
-        <motion.div
-          variants={slideInFromLeft(0.5)}
-          className="flex max-w-[600px] w-full min-w-0 flex-col gap-6 mt-6 text-4xl sm:text-6xl font-bold text-white h-auto leading-[1.2] pb-1 [overflow-wrap:anywhere]"
-        >
-          <span>
-            {t("headlineStart")}{" "}
-            <span className="inline-block align-baseline text-transparent bg-clip-text bg-gradient-to-r from-[#00D4FF] to-[#FFB800] leading-[1.2] pb-[0.08em] [overflow-wrap:anywhere]">
-              {t("headlineHighlight")}
-            </span>{" "}
-            {t("headlineEnd")}
-          </span>
-        </motion.div>
-
-        <motion.p
-          variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px] w-full min-w-0"
-        >
-          {t("description")}
-        </motion.p>
-
-        <motion.a
-          variants={slideInFromLeft(1)}
-          href="#projects"
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[220px] w-full text-sm sm:text-base"
-        >
-          {t("cta")}
-        </motion.a>
-      </div>
-
+    <Container className="relative z-[20] overflow-x-hidden overflow-y-visible pt-28 sm:pt-32 md:pt-40">
       <motion.div
-        variants={slideInFromRight(0.8)}
-        className="hidden w-full min-w-0 h-full justify-center items-center lg:flex"
+        initial="hidden"
+        animate="visible"
+        className="flex w-full flex-col items-center justify-center gap-10 lg:flex-row lg:gap-8"
       >
-        <Image
-          src="/hero-bg.svg"
-          alt={t("imageAlt")}
-          height={650}
-          width={650}
-          draggable={false}
-          className="select-none"
-        />
+        <div className="m-auto flex h-full w-full min-w-0 flex-col justify-center gap-5 text-start">
+          <motion.h1
+            variants={slideInFromTop}
+            className="text-2xl font-bold tracking-tight text-[#00D4FF] sm:text-3xl"
+          >
+            {t("name")}
+          </motion.h1>
+
+          <motion.div
+            variants={slideInFromTop}
+            className="Welcome-box max-w-full border border-[#00D4FF44] px-[7px] py-[8px] opacity-[0.9]"
+          >
+            <SparklesIcon className="mr-[10px] h-5 w-5 text-[#00D4FF]" />
+            <p className="Welcome-text min-w-0 text-[13px]">{t("badge")}</p>
+          </motion.div>
+
+          <motion.div
+            variants={slideInFromLeft(0.5)}
+            className="mt-2 flex h-auto w-full min-w-0 max-w-[600px] flex-col gap-6 pb-1 text-4xl font-bold leading-[1.2] text-white [overflow-wrap:anywhere] sm:mt-4 sm:text-6xl"
+          >
+            <span>
+              {t("headlineStart")}{" "}
+              <span className="inline-block align-baseline bg-gradient-to-r from-[#00D4FF] to-[#FFB800] bg-clip-text pb-[0.08em] leading-[1.2] text-transparent [overflow-wrap:anywhere]">
+                {t("headlineHighlight")}
+              </span>{" "}
+              {t("headlineEnd")}
+            </span>
+          </motion.div>
+
+          <motion.p
+            variants={slideInFromLeft(0.8)}
+            className="my-5 w-full min-w-0 max-w-[600px] text-lg text-gray-400"
+          >
+            {t("description")}
+          </motion.p>
+
+          <motion.a
+            variants={slideInFromLeft(1)}
+            href="#projects"
+            className="button-primary w-full max-w-[220px] cursor-pointer rounded-lg py-2 text-center text-sm text-white sm:text-base"
+          >
+            {t("cta")}
+          </motion.a>
+        </div>
+
+        <motion.div
+          variants={slideInFromRight(0.8)}
+          className="flex w-full min-w-0 items-center justify-center"
+        >
+          <Image
+            src="/hero-bg.svg"
+            alt={t("imageAlt")}
+            height={650}
+            width={650}
+            priority
+            draggable={false}
+            className="h-auto w-full max-w-[420px] select-none sm:max-w-[520px] lg:max-w-[650px]"
+          />
+        </motion.div>
       </motion.div>
-    </motion.div>
+    </Container>
   );
 }
