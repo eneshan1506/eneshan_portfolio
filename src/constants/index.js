@@ -100,6 +100,12 @@ export const SOCIALS = [
 
 export const PROJECTS = [
   {
+    descriptionKey: "hanHandyService",
+    title: "HAN Handy Service",
+    tags: ["React", "TypeScript", "Express", "Prisma", "Neon"],
+    demoUrl: "https://handyreparatur.hanenes.com/",
+  },
+  {
     descriptionKey: "hanmarktApp",
     title: "HanMarkt",
     tags: ["Next.js", "Tailwind CSS", "Market App"],

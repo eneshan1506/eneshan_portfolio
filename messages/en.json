@@ -46,6 +46,9 @@
     "title": "My Projects",
     "liveDemo": "Live Demo",
     "items": {
+      "hanHandyService": {
+        "description": "A white-label smartphone repair storefront with an integrated inventory admin panel — JWT auth, barcode scanning, stock alerts, and a live product catalog for shops in Germany."
+      },
       "handonerApp": {
         "description": "A modern doner restaurant website built with Next.js and Tailwind CSS, presenting menu items and products with a clean, fast interface."
       },

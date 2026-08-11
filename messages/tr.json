@@ -46,6 +46,9 @@
     "title": "Projelerim",
     "liveDemo": "Canlı Demo",
     "items": {
+      "hanHandyService": {
+        "description": "Almanya'daki telefon tamir dükkanları için white-label vitrin ve entegre stok yönetimi — JWT giriş, barkod tarama, stok uyarıları ve canlı ürün kataloğu."
+      },
       "handonerApp": {
         "description": "Next.js ve Tailwind CSS ile gelistirilmis, menu ve urun sunumunu hizli ve temiz bir arayuzle veren modern bir donerci web sitesi."
       },

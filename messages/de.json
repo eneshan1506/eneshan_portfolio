@@ -46,6 +46,9 @@
     "title": "Meine Projekte",
     "liveDemo": "Demo ansehen",
     "items": {
+      "hanHandyService": {
+        "description": "Ein White-Label-Schaufenster für Smartphone-Reparatur mit integriertem Lager-Admin — JWT-Login, Barcode-Scan, Bestandswarnungen und live Produktkatalog für Werkstätten in Deutschland."
+      },
       "handonerApp": {
         "description": "Eine moderne Doener-Restaurant-Website mit Next.js und Tailwind CSS, die Menues und Produkte in einer klaren und schnellen Oberflaeche praesentiert."
       },
