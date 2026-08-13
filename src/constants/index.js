@@ -100,11 +100,25 @@ export const SOCIALS = [
 
 export const PROJECTS = [
   {
+    descriptionKey: "lagerxPro",
+    title: "LagerX Pro",
+    tags: ["Next.js", "Express", "Prisma", "PostgreSQL", "TanStack Query"],
+    demoUrl: "https://handyreparatur.hanenes.com/admin/login",
+    image: "/projects/lagerx-pro-cover.webp",
+  },
+  {
     descriptionKey: "hanHandyService",
     title: "HAN Handy Service",
     tags: ["React", "TypeScript", "Express", "Prisma", "Neon"],
     demoUrl: "https://handyreparatur.hanenes.com/",
     image: "/projects/han-handy-service.webp",
+  },
+  {
+    descriptionKey: "edeHome",
+    title: "Ede Home",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion", "Nodemailer"],
+    demoUrl: "https://ede-home.vercel.app/",
+    image: "/projects/ede-home.webp",
   },
   {
     descriptionKey: "hanmarktApp",
@@ -140,20 +154,6 @@ export const PROJECTS = [
     tags: ["React", "TypeScript", "Vercel"],
     demoUrl: "https://todo-app-ts-inky.vercel.app/",
     image: "/projects/todo-app.webp",
-  },
-  {
-    descriptionKey: "calculatorApp",
-    title: "Calculator-App",
-    tags: ["React", "JavaScript", "CSS"],
-    demoUrl: "https://calculator-app-topaz-pi-54.vercel.app/",
-    image: "/projects/calculator-app.webp",
-  },
-  {
-    descriptionKey: "weatherApp",
-    title: "Weather-App",
-    tags: ["React", "API", "Tailwind CSS"],
-    demoUrl: "https://weather-app-topaz-ten-24.vercel.app/",
-    image: "/projects/weather-app.webp",
   },
   {
     descriptionKey: "guessApp",

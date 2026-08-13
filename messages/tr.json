@@ -47,8 +47,14 @@
     "title": "Projelerim",
     "liveDemo": "Canlı Demo",
     "items": {
+      "lagerxPro": {
+        "description": "Küçük ve orta ölçekli depolar için rol tabanlı stok yönetimi — barkod tarama, stok hareketleri, kritik stok uyarıları ve TR/EN/DE arayüz."
+      },
       "hanHandyService": {
         "description": "Almanya'daki telefon tamir dükkanları için white-label vitrin ve entegre stok yönetimi — JWT giriş, barkod tarama, stok uyarıları ve canlı ürün kataloğu."
+      },
+      "edeHome": {
+        "description": "Mobilya mağazası için Next.js ile hazırlanmış modern vitrin — ürün sunumu, marka hikâyesi ve e-posta destekli iletişim formu."
       },
       "handonerApp": {
         "description": "Next.js ve Tailwind CSS ile gelistirilmis, menu ve urun sunumunu hizli ve temiz bir arayuzle veren modern bir donerci web sitesi."
@@ -61,12 +67,6 @@
       },
       "medikamenteApp": {
         "description": "TypeScript ile geliştirilmiş, günlük ilaç takibi için tasarlanmış pratik bir uygulama."
-      },
-      "calculatorApp": {
-        "description": "Günlük hesaplamalar için odaklı kullanım ve temiz arayüz sunan kompakt bir hesap makinesi uygulaması."
-      },
-      "weatherApp": {
-        "description": "Güncel hava durumu verilerini anlaşılır biçimde gösteren ve önemli bilgilere hızlı erişim sağlayan bir hava durumu uygulaması."
       },
       "guessApp": {
         "description": "Mesajları kaydetmek ve yönetmek için Next.js, TypeScript ve Blob Storage ile geliştirilmiş bir ziyaretçi yorum uygulaması."

@@ -47,8 +47,14 @@
     "title": "Meine Projekte",
     "liveDemo": "Demo ansehen",
     "items": {
+      "lagerxPro": {
+        "description": "Ein rollenbasiertes Lagerverwaltungssystem für kleine und mittlere Lager — Barcode-Scan, Bestandsbewegungen, kritische Bestandswarnungen und eine TR/EN/DE-Oberfläche."
+      },
       "hanHandyService": {
         "description": "Ein White-Label-Schaufenster für Smartphone-Reparatur mit integriertem Lager-Admin — JWT-Login, Barcode-Scan, Bestandswarnungen und live Produktkatalog für Werkstätten in Deutschland."
+      },
+      "edeHome": {
+        "description": "Ein modernes Möbel-Schaufenster mit Next.js — Produktpräsentation, Markengeschichte und Kontaktformular mit E-Mail-Versand."
       },
       "handonerApp": {
         "description": "Eine moderne Doener-Restaurant-Website mit Next.js und Tailwind CSS, die Menues und Produkte in einer klaren und schnellen Oberflaeche praesentiert."
@@ -61,12 +67,6 @@
       },
       "medikamenteApp": {
         "description": "Eine praktische App zur taeglichen Medikamentenverfolgung, entwickelt mit TypeScript."
-      },
-      "calculatorApp": {
-        "description": "Eine kompakte Rechner-App für alltägliche Berechnungen mit fokussierter Bedienung und sauberem Interface."
-      },
-      "weatherApp": {
-        "description": "Eine Wetter-App, die aktuelle Wetterdaten übersichtlich darstellt und wichtige Informationen schnell zugreifbar macht."
       },
       "guessApp": {
         "description": "Eine Besucherkommentar-App mit Next.js, TypeScript und Blob Storage zum Speichern und Verwalten von Nachrichten."

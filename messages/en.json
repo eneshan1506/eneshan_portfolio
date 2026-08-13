@@ -47,8 +47,14 @@
     "title": "My Projects",
     "liveDemo": "Live Demo",
     "items": {
+      "lagerxPro": {
+        "description": "A role-based warehouse management system for small-to-medium warehouses — barcode scanning, stock movements, critical stock alerts, and a TR/EN/DE interface."
+      },
       "hanHandyService": {
         "description": "A white-label smartphone repair storefront with an integrated inventory admin panel — JWT auth, barcode scanning, stock alerts, and a live product catalog for shops in Germany."
+      },
+      "edeHome": {
+        "description": "A modern furniture storefront built with Next.js — product showcase, brand story, and a contact form with email delivery."
       },
       "handonerApp": {
         "description": "A modern doner restaurant website built with Next.js and Tailwind CSS, presenting menu items and products with a clean, fast interface."
@@ -61,12 +67,6 @@
       },
       "medikamenteApp": {
         "description": "A practical medication tracking app for daily use, built with TypeScript."
-      },
-      "calculatorApp": {
-        "description": "A compact calculator app for everyday calculations with focused controls and a clean interface."
-      },
-      "weatherApp": {
-        "description": "A weather app that presents current weather data clearly and keeps key information easy to access."
       },
       "guessApp": {
         "description": "A visitor comment app built with Next.js, TypeScript, and Blob Storage for saving and managing messages."
