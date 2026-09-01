@@ -50,6 +50,9 @@
       "lagerxPro": {
         "description": "Küçük ve orta ölçekli depolar için rol tabanlı stok yönetimi — barkod tarama, stok hareketleri, kritik stok uyarıları ve TR/EN/DE arayüz."
       },
+      "dtzB1Meister": {
+        "description": "Türkçe konuşanlar için yapay zeka destekli DTZ A2-B1 sınav hazırlık PWA uygulaması — Hören, Lesen, Schreiben (AI jüri puanlama), Sprechen pratikleri ve bulut senkronizasyonu."
+      },
       "hanHandyService": {
         "description": "Almanya'daki telefon tamir dükkanları için white-label vitrin ve entegre stok yönetimi — JWT giriş, barkod tarama, stok uyarıları ve canlı ürün kataloğu."
       },

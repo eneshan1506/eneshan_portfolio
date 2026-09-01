@@ -107,6 +107,13 @@ export const PROJECTS = [
     image: "/projects/lagerx-pro-cover.webp",
   },
   {
+    descriptionKey: "dtzB1Meister",
+    title: "DTZ B1 Meister",
+    tags: ["PWA", "JavaScript", "Gemini AI", "Supabase"],
+    demoUrl: "https://dtzb1.hanenes.com/",
+    image: "/projects/dtz-b1-meister.webp",
+  },
+  {
     descriptionKey: "hanHandyService",
     title: "HAN Handy Service",
     tags: ["React", "TypeScript", "Express", "Prisma", "Neon"],

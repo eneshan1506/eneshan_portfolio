@@ -50,6 +50,9 @@
       "lagerxPro": {
         "description": "Ein rollenbasiertes Lagerverwaltungssystem für kleine und mittlere Lager — Barcode-Scan, Bestandsbewegungen, kritische Bestandswarnungen und eine TR/EN/DE-Oberfläche."
       },
+      "dtzB1Meister": {
+        "description": "Eine KI-gestützte DTZ A2-B1 Prüfungsvorbereitungs-PWA — Hören, Lesen, Schreiben mit KI-Bewertung, Sprechen-Übungen, Spaced-Repetition-Wortschatz und Cloud-Synchronisation."
+      },
       "hanHandyService": {
         "description": "Ein White-Label-Schaufenster für Smartphone-Reparatur mit integriertem Lager-Admin — JWT-Login, Barcode-Scan, Bestandswarnungen und live Produktkatalog für Werkstätten in Deutschland."
       },

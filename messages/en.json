@@ -50,6 +50,9 @@
       "lagerxPro": {
         "description": "A role-based warehouse management system for small-to-medium warehouses — barcode scanning, stock movements, critical stock alerts, and a TR/EN/DE interface."
       },
+      "dtzB1Meister": {
+        "description": "An AI-powered DTZ A2-B1 exam preparation PWA — Hören, Lesen, Schreiben with AI evaluation, Sprechen practice, spaced repetition vocabulary, and multi-device cloud sync."
+      },
       "hanHandyService": {
         "description": "A white-label smartphone repair storefront with an integrated inventory admin panel — JWT auth, barcode scanning, stock alerts, and a live product catalog for shops in Germany."
       },
