@@ -47,6 +47,9 @@
     "title": "Projelerim",
     "liveDemo": "Canlı Demo",
     "items": {
+      "sellApp": {
+        "description": "Dönüşüm oranlarını ve mağaza gelirini artıran resmi Shopify uygulaması — Gadget.dev altyapısı, Shopify Polaris yönetici paneli, Liquid tema uzantıları ve GraphQL Storefront entegrasyonu."
+      },
       "lagerxPro": {
         "description": "Küçük ve orta ölçekli depolar için rol tabanlı stok yönetimi — barkod tarama, stok hareketleri, kritik stok uyarıları ve TR/EN/DE arayüz."
       },

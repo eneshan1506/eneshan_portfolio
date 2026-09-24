@@ -100,6 +100,13 @@ export const SOCIALS = [
 
 export const PROJECTS = [
   {
+    descriptionKey: "sellApp",
+    title: "SellApp",
+    tags: ["Gadget.dev", "Shopify App", "Polaris", "Liquid", "React", "GraphQL"],
+    demoUrl: "https://apps.shopify.com/sellapp-1",
+    image: "/projects/sellapp.webp",
+  },
+  {
     descriptionKey: "lagerxPro",
     title: "LagerX Pro",
     tags: ["Next.js", "Express", "Prisma", "PostgreSQL", "TanStack Query"],

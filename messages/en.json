@@ -47,6 +47,9 @@
     "title": "My Projects",
     "liveDemo": "Live Demo",
     "items": {
+      "sellApp": {
+        "description": "An official Shopify app designed to boost store conversion rates and sales — Built with Gadget.dev backend, Shopify Polaris admin UI, Theme App Extensions (Liquid), and GraphQL Storefront API."
+      },
       "lagerxPro": {
         "description": "A role-based warehouse management system for small-to-medium warehouses — barcode scanning, stock movements, critical stock alerts, and a TR/EN/DE interface."
       },

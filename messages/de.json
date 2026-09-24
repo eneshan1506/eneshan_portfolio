@@ -47,6 +47,9 @@
     "title": "Meine Projekte",
     "liveDemo": "Demo ansehen",
     "items": {
+      "sellApp": {
+        "description": "Offizielle Shopify-App zur Steigerung von Konversion und Umsatz — Entwickelt mit Gadget.dev Backend, Shopify Polaris Admin-UI, Theme App Extensions (Liquid) und GraphQL Storefront API."
+      },
       "lagerxPro": {
         "description": "Ein rollenbasiertes Lagerverwaltungssystem für kleine und mittlere Lager — Barcode-Scan, Bestandsbewegungen, kritische Bestandswarnungen und eine TR/EN/DE-Oberfläche."
       },

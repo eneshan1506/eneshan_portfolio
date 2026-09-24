@@ -9,14 +9,14 @@ function ProjectCover({ image, title, imageAlt }) {
   const showImage = Boolean(image) && !failed;
 
   return (
-    <div className="relative h-44 w-full shrink-0 overflow-hidden border-b border-[#00D4FF22] bg-[#0a0618] sm:h-48">
+    <div className="relative h-48 w-full shrink-0 overflow-hidden border-b border-[#00D4FF22] bg-[#0a0618] sm:h-52">
       {showImage ? (
         <Image
           src={image}
           alt={imageAlt || title}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover object-top transition-transform duration-300 hover:scale-[1.03]"
+          className="object-contain p-2 transition-transform duration-300 hover:scale-[1.03]"
           onError={() => setFailed(true)}
         />
       ) : (
