@@ -47,6 +47,9 @@
     "title": "Projelerim",
     "liveDemo": "Canlı Demo",
     "items": {
+      "couchmax": {
+        "description": "Almanya genelinde profesyonel yerinde koltuk ve döşeme temizliği platformu — interaktif fiyat hesaplama sihirbazı, öncesi/sonrası galerisi, çift dil (TR/DE) desteği ve hızlı WhatsApp & e-posta teklif entegrasyonu."
+      },
       "sellApp": {
         "description": "Dönüşüm oranlarını ve mağaza gelirini artıran resmi Shopify uygulaması — Gadget.dev altyapısı, Shopify Polaris yönetici paneli, Liquid tema uzantıları ve GraphQL Storefront entegrasyonu."
       },

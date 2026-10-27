@@ -47,6 +47,9 @@
     "title": "My Projects",
     "liveDemo": "Live Demo",
     "items": {
+      "couchmax": {
+        "description": "A modern web platform for professional on-site couch and upholstery cleaning across Germany — featuring an interactive price calculator, before/after comparison slider, bilingual support (DE/TR), and instant WhatsApp & email inquiry integration."
+      },
       "sellApp": {
         "description": "An official Shopify app designed to boost store conversion rates and sales — Built with Gadget.dev backend, Shopify Polaris admin UI, Theme App Extensions (Liquid), and GraphQL Storefront API."
       },

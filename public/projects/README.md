@@ -4,6 +4,8 @@ Live screenshots captured from each demo (1200×750 WebP).
 
 | File | Project |
 |------|---------|
+| `couchmax.webp` | Couchmax |
+| `sellapp.webp` | SellApp |
 | `lagerx-pro-cover.webp` | LagerX Pro |
 | `dtz-b1-meister.webp` | DTZ B1 Meister |
 | `han-handy-service.webp` | HAN Handy Service |

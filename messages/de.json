@@ -47,6 +47,9 @@
     "title": "Meine Projekte",
     "liveDemo": "Demo ansehen",
     "items": {
+      "couchmax": {
+        "description": "Moderne Webplattform für professionelle Vor-Ort-Couch- und Polsterreinigung in Deutschland — mit interaktivem Sofort-Preisrechner, Vorher-Nachher-Vergleichs-Slider, zweisprachiger Unterstützung (DE/TR) und direkter WhatsApp- sowie E-Mail-Anfrage."
+      },
       "sellApp": {
         "description": "Offizielle Shopify-App zur Steigerung von Konversion und Umsatz — Entwickelt mit Gadget.dev Backend, Shopify Polaris Admin-UI, Theme App Extensions (Liquid) und GraphQL Storefront API."
       },

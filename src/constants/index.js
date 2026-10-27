@@ -100,6 +100,13 @@ export const SOCIALS = [
 
 export const PROJECTS = [
   {
+    descriptionKey: "couchmax",
+    title: "Couchmax",
+    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    demoUrl: "https://www.couchmax-polster.de",
+    image: "/projects/couchmax.webp",
+  },
+  {
     descriptionKey: "sellApp",
     title: "SellApp",
     tags: ["Gadget.dev", "Shopify App", "Polaris", "Liquid", "React", "GraphQL"],
